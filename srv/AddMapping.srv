@@ -1,0 +1,7 @@
+string name
+string source
+string destination
+string type
+---
+bool success
+string message
