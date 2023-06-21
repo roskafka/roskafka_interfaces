@@ -1,6 +1,6 @@
 string name
-string source
-string destination
+string ros_topic
+string kafka_topic
 string type
 ---
 bool success
