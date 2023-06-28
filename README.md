@@ -4,22 +4,28 @@ roskafka_interfaces is a ROS (Robot Operating System) 2 package that provides in
 
 ## Setup
 
-Download code to ROS 2 workspace:
+1. Download code to ROS 2 workspace:
 
-    mkdir -p ~/ros2_ws/src
-    cd ~/ros2_ws/src
-    git clone https://gitlab.informatik.hs-furtwangen.de/ss23-forschungsprojekt-7/roskafka_interfaces.git
+        mkdir -p ~/ros2_ws/src
+        cd ~/ros2_ws/src
+        git clone https://gitlab.informatik.hs-furtwangen.de/ss23-forschungsprojekt-7/roskafka_interfaces.git
 
-Build package:
+2. Build package:
 
-    cd ~/ros2_ws
-    PYTHONWARNINGS=ignore:::setuptools.command.install colcon build --packages-select roskafka_interfaces
+        cd ~/ros2_ws
+        PYTHONWARNINGS=ignore:::setuptools.command.install colcon build --packages-select roskafka_interfaces
 
-Source package:
+3. Open a new terminal: Always source a workspace from a different terminal than the one you used `colcon build`.
 
-    . install/setup.bash
+4. Source ROS 2:
 
-Verify that service interfaces exist:
+        source /opt/ros/humble/setup.bash
 
-    ros2 interface show roskafka_interfaces/srv/AddMapping
-    ros2 interface show roskafka_interfaces/srv/RemoveMapping
+5. Source package:
+
+        . install/setup.bash
+
+6. Verify that service interfaces exist:
+
+        ros2 interface show roskafka_interfaces/srv/AddMapping
+        ros2 interface show roskafka_interfaces/srv/RemoveMapping
