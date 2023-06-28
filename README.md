@@ -1,5 +1,9 @@
 # roskafka_interfaces
 
+roskafka_interfaces is a ROS (Robot Operating System) 2 package that provides interface specifications for the [roskafka](https://gitlab.informatik.hs-furtwangen.de/ss23-forschungsprojekt-7/roskafka) ROS 2 package.
+
+## Setup
+
 Download code to ROS 2 workspace:
 
     mkdir -p ~/ros2_ws/src
